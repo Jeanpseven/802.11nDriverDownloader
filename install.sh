@@ -1,0 +1,1 @@
+sudo apt update && sudo apt upgrade -y && sudo apt install build-essential dkms git -y && git clone https://github.com/aircrack-ng/rtl8188eus && cd rtl8188eus && sudo make && sudo make install && echo "blacklist r8188eu" | sudo tee /etc/modprobe.d/realtek.conf && sudo reboot
